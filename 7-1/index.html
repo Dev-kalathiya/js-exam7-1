@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-ex-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+
+        <h2>  ENTER PRODUCT DETAILS </h2>
+
+        <label> Enter  Name</label> <br>
+        <input type="text" placeholder="product name" id="product_name" required><br><br>
+        <label> ENTER ITEM NAME</label><br>
+        <input type="text" placeholder="enter item name" id="item" required><br><br>
+        <label> ENTER PRICE </label><br>
+        <input type="text" placeholder="enter price  " id="enter_price" required><br><br>
+        <label>ENTER IMG URL</label>
+        <input type="src" placeholder="img URL" id="img" required><br><br>
+        <label>SELECT CATEGORY</label>
+        <select name="select category " id="category " required>
+            <option value="select category ">select category </option>
+            <option value="baby">Shirt </option>
+            <option value="books">Hoodie</option>
+            <option value="deales">jeans    </option>
+        </select><br><br>
+        <input type="submit" id="submit">
+
+    </form>
+    <table border="1px solid black" cellspacing="10px" cellpadding="10px" id="output">
+        <tbody>
+            <tr>
+                <th>product name</th>
+                <th>img</th>
+                <th>enter price</th>
+                <th>item</th>
+                <th>category </th>
+                <th id="delete">delete</th>
+            </tr>
+        </tbody>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
