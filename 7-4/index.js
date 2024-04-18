@@ -41,7 +41,7 @@ const uimaker=(data)=>{
         if (val == "htl") {
          let p =  data.sort((a, b) => b.price - a.price)
             uimaker(p)
-            alert("sorting successfully")
+            alert("sorting done")
         }
         else {
            data.sort((a, b) => a.price - b.price)
